@@ -116,6 +116,9 @@ software:
   packages:
     - path: ../platforms/windows/scripts/warp-config.ps1
       self_service: false
+  fleet_maintained_apps:
+    - slug: swiftdialog/darwin
+      self_service: true
 labels:
   - name: C-Suites
     description: Hosts belonging to the C-Suites
