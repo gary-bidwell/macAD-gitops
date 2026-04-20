@@ -46,6 +46,12 @@ controls:
       # … e.g.
       # - path: ../lib/ios/declaration-profiles/Passcode settings.json
       # - path: ../lib/ios/configuration-profiles/self-service.mobileconfig
+      - path: ../platforms/ios/configuration-profiles/passcode-settings.json
+        controls:
+        apple_settings:
+          - path: ../platforms/ios/configuration-profiles/passcode-settings.json
+            labels_exclude_any:
+              - C-Suite
   android_settings:
     configuration_profiles:
     certificates:
@@ -107,6 +113,9 @@ software:
     #   display_name: "Slack"
     #   self_service: true
     #   setup_experience: true
+  packages:
+    - path: ../platforms/windows/scripts/warp-config.ps1
+      self_service: false
 labels:
   - name: C-Suites
     description: Hosts belonging to the C-Suites
