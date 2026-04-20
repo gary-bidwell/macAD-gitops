@@ -12,6 +12,11 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 org_settings:
+
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      detination_url: https://webhook.site/010e2faf-dcd1-45d6-b129-0df74cbc7276
   org_info:
     ###########################################################
     # The name of your organization is displayed to end users
@@ -21,7 +26,7 @@ org_settings:
     # Read more:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
-    org_name: Dyson Ltd
+    org_name: Dyson Fleet GitOps Demo
 
   server_settings:
     ###########################################################
